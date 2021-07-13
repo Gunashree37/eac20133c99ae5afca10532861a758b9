@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native';
-import { Header } from 'react-native-elements';
+
+
+
 export default class HomeScreen extends Component{
   constructor() {
     super();
@@ -65,30 +67,19 @@ export default class HomeScreen extends Component{
   render(){
     return(
       <View style={{flex:1, borderWidth:2}}>
-        <Header
-          backgroundColor={'purple'}
-          centerComponent={{
-            text: 'Pocket Dictionary',
-            style: { color: '#fff', fontSize: 20 },
-          }}
-        />
+       
+      
+      
+      
         <View style={styles.inputBoxContainer}>
         
-          <TextInput
-            style={styles.inputBox}
-            onChangeText={text => {
-              this.setState({
-                text: text,
-                isSearchPressed: false,
-                word  : "Loading...",
-                lexicalCategory :'',
-                examples : [],
-                definition : ""
-              });
-            }}
-            value={this.state.text}
-          />
-
+         
+          
+          
+          
+          
+          
+          
           <TouchableOpacity
             style={styles.searchButton}
             onPress={() => {
